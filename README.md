@@ -3,4 +3,4 @@
 
 
 # Output Screenshot of Apna Tv
-![LCO Mascot](Screenshot(83).jpg"LCO")
+![LCO Mascot](Screenshot(83).png "LCO")
