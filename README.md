@@ -4,4 +4,4 @@
 
 # Output Screenshot of Apna Tv
 Image
-![](Screenshot (83).png)
+![](Ott-Platform/Screenshot (83).png )
