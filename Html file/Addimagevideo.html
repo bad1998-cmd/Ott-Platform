@@ -1,0 +1,104 @@
+ <!DOCTYPE html>  
+    <html>  
+    <head>  
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <style>  
+    body{  
+      font-family: Calibri, Helvetica, sans-serif;  
+      background-color: pink;  
+    }  
+    .container {  
+        padding: 50px;  
+      background-color: lightgreen;  
+    }  
+      
+    input[type=text], input[type=password], textarea {  
+      width: 100%;  
+      padding: 15px;  
+      margin: 5px 0 22px 0;  
+      display: inline-block;  
+      border: none;  
+      background: #f1f1f1;  
+    }  
+    input[type=text]:focus, input[type=password]:focus {  
+      background-color: orange;  
+      outline: none;  
+    }  
+     div {  
+                padding: 10px 0;  
+             }  
+    hr {  
+      border: 1px solid #f1f1f1;  
+      margin-bottom: 25px;  
+    }  
+    .registerbtn {  
+      background-color: blue;  
+      color: white;  
+      padding: 16px 20px;  
+      margin: 8px 0;  
+      border: none;  
+      cursor: pointer;  
+      width: 100%;  
+      opacity: 0.9;  
+    }  
+    .registerbtn:hover {  
+      opacity: 1;  
+    }  
+    .form3
+    {
+      width:600px;
+      margin: 0px 400px;
+    }
+    </style>  
+    </head>  
+    <body background="dash3.jpg">  
+
+      <div class="form3">
+    <form>  
+      <div class="container">  
+      <center>  <h1> Add a Video or images</h1> </center>  
+      <hr>  
+      <label> Web series Name </label>   
+    <input type="text" name="name" placeholder= "Name of Web series" size="15" required />   
+    
+    
+    <div>  
+    <label>   
+    Web Series Genre :  
+    </label><br>  
+      <input type="text" name="name1" placeholder= "Genre of Web Series" size="15" required />   
+      
+    </div>  
+    <label>   
+    Season And Episodes:  
+    </label>  
+    
+    <input type="text" name="number" placeholder="Number of seasons and episodes" size="10"/ required>   
+    
+     <label >Duration : 
+     </label>  
+     <input type="text" placeholder="Aproximate Duration of Each Episodes" name="duration" required>  
+      
+        <label >Rating :
+        </label>  
+        <input type="text" placeholder="Enter Rating" name="rating" required>  
+
+         <div>
+            <label>Choose Image of Web Series :</label>
+        <input type="file" name="web_series_image" id="web_series_image">
+        </div>
+
+    <div >
+      <label>Video of the web series :-</label>
+    <input type="file" name="web_series_video" id="web_series_video">
+    </div>
+      
+          
+        <button type="submit" class="registerbtn">Uploads</button>  
+
+        
+
+    </form>
+    </div>  
+    </body>  
+    </html>  

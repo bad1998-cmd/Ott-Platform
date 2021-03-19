@@ -1,0 +1,143 @@
+ <?php
+    include("connection1.php");
+    error_reporting(0);
+    ?>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+
+    <title>Webpage using div</title>
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+        body{
+            margin:0px;
+        }
+        .nav{
+          background-color: red;
+          width: 100%;
+          height: 145px;
+        }
+        .left{
+          width: 250px;
+/*border: 2px solid blue;*/
+        }
+            img{
+              position: absolute;
+              top: 2px;
+              left: 2px;
+            } 
+      h1{
+              position: absolute;
+              top: 93px;
+              left: 2px;
+            } 
+            .mid{
+              width: 800px;
+/*border: 2px solid blue;*/
+margin-left: 5px;
+
+
+            }
+            .midul{
+              display: flex;
+              margin: 5px; 
+            }
+            li{
+              margin: 25px;
+              list-style: none; 
+              font-size: 35px;
+              margin-top: 15px;
+              font-weight: bolder;
+            }
+            .logout{
+              position: absolute;
+              top: 65px;
+              right: 25px;
+              border: 3px solid black;
+              background-color: grey;
+              color: white;
+}
+.line{
+  height: 25px;
+  background-color: black;
+}
+  </style>
+
+</head>
+<body>
+<div>
+    
+            <!-- Nav -->
+        <div class="nav">
+          
+          
+
+        <div class="left">   <img src="logo1.jpeg" height="100" width="150">
+           <h1>Apna TV</h1>
+         </div>
+          <div class="mid">
+            <ul class="midul">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">MENU </a></li>
+                <li><a href="#">MOVIES</a></li>
+                <li><a href="#">WEB SERIES</a></li> 
+            </ul>
+    </div>
+    <a class="logout" href="Login form.html">LOG OUT</a>
+        </div>
+     <div class="line"></div>
+      <!-- main -->
+      
+      <?php
+         
+         $fetchVideos = mysqli_query($conn, "SELECT * FROM  video_tbl ORDER BY id DESC");
+         while($row = mysqli_fetch_assoc($fetchVideos)){
+           //$location = $row['location'];
+           $image = $row['web_image'];
+           $video = $row['web_video'];
+           $name = $row['web_name'];
+          
+      ?>
+
+        <div class="container">
+          <h2>Card Image</h2>
+          <div class="card" style="width:400px">
+            <img class="card-img-top" src="<?php echo $image ;?>" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title"><?php echo $name ;?></h4>
+              <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Watch Video</button>
+              <div id="demo" class="collapse">
+                <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="<?php echo $video ?>" allowfullscreen></iframe>
+              </div>
+              </div>
+            </div>
+          </div><?php } ?>
+        
+           
+
+        <!-- side -->
+            
+      
+      <!-- footer -->
+
+      
+        
+        
+
+     
+        
+ </div>
+</body>
+</html>
+
+ 

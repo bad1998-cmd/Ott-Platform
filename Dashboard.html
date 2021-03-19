@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Webpage using div</title>
+	<style>
+		body{
+			margin:0px;
+		}
+        .header{
+                padding: 5px;
+                background-color:#33f6ff;
+                text-align: center;
+
+               }
+          .header h1{
+          	color: black;
+             
+          }
+              /*===============[Nav CSS]==========*/
+              .nav{
+              	background-color: darkred;
+              	padding: 5px;
+
+              	}
+             
+              .nav li{
+              list-style: none;
+              display: inline-block;
+              padding: 8px;
+              
+               }
+           .nav a{
+           	color: #fff;
+
+           }
+           
+          .nav ul li a:hover{
+            text-decoration: none;
+            color: black;
+
+           }
+              .lside{
+              	 float: left;
+               width: 80%;
+               min-height: 440px;
+               background-color: #f0f8ff;
+               text-align: center;
+               border-image:
+               height:200; 
+                width:400px;
+                margin: 0px 0px;
+              }
+           .rside
+           {
+           	text-align: center;
+            float: right;
+           	width: 20%;
+           	  min-height: 440px;
+             background-color: chartreuse;
+             margin: 0px;
+           }
+
+          
+                        .center {
+              position: absolute;
+              top: 165px;
+              right: 270px;
+            }
+        .footer{
+          display: flex;
+          background-color: red;
+          height: 150px;
+          width: 100%;
+          font-weight: bold;
+          font-size: 20px;
+          justify-content: space-between;
+        }
+
+
+	</style>
+
+</head>
+<body>
+<div>
+	<div class="header">
+	  <h1>Apna Tv</h1>
+	</div>
+         	<!-- Nav -->
+      	<div class="nav">
+          <nav>
+      		<ul>
+                <li><a href="Dashboard.html">HOME</a></li>
+				<li><a href="#">MENU </a></li>
+				<li><a href="about1.html">ABOUT</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+				<li style="float: right;"><a href="Login Form.php">USER LOGIN</a></li>
+				<li style="float: right;"><a href="Registration.php">USER SIGN-UP</a></li>
+        <li style="float: right;"><a href="Login Form.php">ADMIN LOGIN</a></li>
+        
+			</ul>
+    </nav>
+      	</div>
+     
+      <!-- main -->
+      	<div style="height:440px">
+      		<div class="lside">	
+      			
+            <video height ="440" width="780" controls autoplay loop playesinline>
+  <source src="dash5.mp4" type="video/mp4">
+
+  
+  Your browser does not support HTML video.
+</video>
+
+        
+          <img src="dash11.jpeg" class="center" height="440" width="300">
+          
+      		</div>
+      	<!-- side -->
+      		<div class="rside">
+      			<h1>Welcome to Apna TV</h1>
+            <img src="logo.jpeg" height="300" width="270">
+      		</div>
+      	</div>
+      <!-- footer -->
+
+      <div class="footer">
+        <div class="f1">ABOUT Apna TV<br>It is the one of the best Webseries project.<br>It is easy to maintain project.</div>
+        <div class="f2">COPYRIGHT<br><a href="#">@guptasahab@</a><br><a href="#">@8404936386@</a></div>
+        <div class="f3">CREATED BY GUPTASAHAB<br>2020</div>
+
+      </div>
+ </div>
+</body>
+</html>
+
+ 
